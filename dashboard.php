@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/dashboard.css?version=1">
+    <link rel="stylesheet" href="css/dashboardd.css?version=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/sortable-theme-bootstrap.css">
@@ -13,6 +13,9 @@
     <script src="js/sortable.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="includes/charts.php"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <?php include "includes/charts.php"?>
     <title>Inventario MetalMecanica</title>
 </head>
 <body>
@@ -124,59 +127,108 @@
   </div>
 </div>
 
-<div class="grid-container-3">
-<table  class="sortable-theme-bootstrap" data-sortable>
+<div class="tables">
+<table  class="sortable-theme-bootstrap" id="table-1" data-sortable>
   <thead>
     <tr>
       <th>Last Name</th>
       <th>First Name</th>
-      <th>Email</th>
-      <th>Due</th>
-      <th>Web Site</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Smith</td>
       <td>John</td>
-      <td>jsmith@gmail.com</td>
-      <td>$50.00</td>
-      <td>http://www.jsmith.com</td>
+      
     </tr>
     <tr>
       <td>Bach</td>
       <td>Frank</td>
-      <td>fbach@yahoo.com</td>
-      <td>$50.00</td>
-      <td>http://www.frank.com</td>
+     
+    </tr>
+  </tbody>
+</table>
+
+<table  class="sortable-theme-bootstrap" id="table-2"  data-sortable>
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+      <th>Money</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Smith</td>
+      <td>John</td>
+      <td>300</td>
+      
     </tr>
     <tr>
-      <td>Doe</td>
-      <td>Jason</td>
-      <td>jdoe@hotmail.com</td>
-      <td>$100.00</td>
-      <td>http://www.jdoe.com</td>
+      <td>Bach</td>
+      <td>Frank</td>
+      <td>5000</td>
+    </tr>
+  </tbody>
+</table>
+
+<table  class="sortable-theme-bootstrap" id="table-3" data-sortable>
+  <thead>
+    <tr>
+      <th>Last Name</th>
+      <th>First Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Smith</td>
+      <td>John</td>
+      
     </tr>
     <tr>
-      <td>Conway</td>
-      <td>Tim</td>
-      <td>tconway@earthlink.net</td>
-      <td>$50.00</td>
-      <td>http://www.timconway.com</td>
+      <td>Bach</td>
+      <td>Frank</td>
+     
     </tr>
   </tbody>
 </table>
 
 </div>
+<div class="charts">
+<div onload="drawChart()"  id="chart_div" style="width: 450px; height: 300px;"></div>
+<div onload="drawLinearChart()" id="chart_div2" style="width: 450px; height: 300px;"></div>
+<div onload="drawDonutChart()" id="chart_div3" style="width: 450px; height: 300px;"></div>
+</div>
 
 </body>
+<!--
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
 
-<script>
-    $(function() {
-  $("#myTable").tablesorter();
-});
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
 
-</script>
+        var options = {
+          chart: {
+            title: 'Company Performance',
+            subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById("chart_div"));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+-->
+
 </html>
 
 

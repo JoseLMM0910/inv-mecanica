@@ -99,3 +99,30 @@
     line-height: 1.7em;
     margin-left: 30px;
 }
+
+.tables{
+    display: table;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.tables table{
+    display: table-cell;
+    float: left;
+    margin: 4px solid black;
+     border-radius: 5px;
+     border-radius: 5px;
+     margin-left: 20px ;  
+}
+
+.charts{
+    display: table;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.charts div{
+    display: table-cell;
+    float: left;
+     
+      
+
+}

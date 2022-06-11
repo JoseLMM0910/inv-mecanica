@@ -1,0 +1,84 @@
+body{
+  border: 5px solid lightslategray;
+}
+.info-Principal{
+ border: 3px solid rgb(0, 0, 0);
+ border-radius: 6px;
+ 
+}
+.info-Direccion{
+  border: 3px solid rgb(0, 0, 0);
+ border-radius: 6px;
+ 
+}
+.info-Adicional{
+  border: 3px solid rgb(0, 0, 0);
+ border-radius: 6px;
+ 
+}
+
+.content{
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+#Direccion{
+   margin-bottom: 20px;
+}
+#Cpostal{
+  margin-right: 265px;
+}
+#Tlfono{
+  margin-right: 265px;
+}
+#web{
+  margin-right: 265px;
+}
+label{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+input{
+  border-radius: 10px;
+  padding:5px;
+}
+select{
+  border-radius: 10px;
+  padding:5px;
+}
+
+.form-1{
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.form-1 #Proveedor{
+  margin-right: 80px;
+}
+.descripcion{
+  margin-left: 15px;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.descripcion input{
+  width: 750px
+}
+input[type=submit]{
+  margin-top: 20px;
+  position: relative;
+  left: 350px;
+}
+.jumbotron{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightslategray;
+  color: aliceblue;
+}
+.header-1{
+  margin-bottom: 10px;
+}
+.subtitle{
+  margin-top: 10px;
+}
+

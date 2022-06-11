@@ -6,10 +6,13 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 12px;
     font-weight: 300;
     line-height: 1.7em;
     color: rgb(36, 220, 233);
+}
+i{
+    margin-right: 5px;
 }
 
 .wrapper {
@@ -17,15 +20,19 @@ p {
     width: 100%;
     align-items: stretch;
 }
+.Principal{
+ margin-left: 20px;
+ font-size: 12px;
+}
 
 #sidebar {
-    min-width: 200px;
-    max-width: 200px;
+    min-width: 150px;
+    max-width: 150px;
     min-height: 100vh;
-    background: #292c38;
+    background: #2f54e9;
     color: rgb(235, 240, 235);
     transition: all 0.3s;
-    border: #111525;
+    
 }
 
 #sidebar.active {
@@ -34,17 +41,21 @@ p {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #292c38;
-    font-size: 20px;
+    background: #0b34d6;
+    font-size: 12px;
 }
 #sidebar .sidebar-header h5 {
-    background: #292c38;
-    font-size: 15px;
+    background: #0b34d6;
+    font-size: 12px;
+
 }
 
 #sidebar ul.componentes {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-top: 2px solid #0b34d6;
+    border-bottom: 2px solid #0b34d6;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 #sidebar ul p {
@@ -54,8 +65,10 @@ p {
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.1em;
+    font-size: 12px;
     display: block;
+    
+    
 }
 
 #sidebar ul li a:hover {
@@ -65,13 +78,13 @@ p {
 
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
-    background: #292c38;
+    background: #0631dd;
 }
 
 ul ul a {
-    font-size: 0.9em !important;
+    font-size: 12px !important;
     padding-left: 30px !important;
-    background: #111525;
+    background: #031b7e;
 }
 
 a, a:hover, a:focus {

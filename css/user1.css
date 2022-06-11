@@ -1,0 +1,127 @@
+body {
+
+    background:beige;
+}
+
+h4.principal-title {
+    position: relative;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    border:1px solid black;
+    background: rgb(34,113,179);
+    
+    width: 750px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    text-align:end;
+    padding: 30px;
+
+    
+}
+
+
+
+.grid {
+
+    display:grid;
+    background: beige;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px;
+    gap:2em;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: auto;
+    border-radius:10px ;
+    font-family: 'Times New Roman', Times, serif;
+    
+
+    
+   border: 5px double;
+   border-color: rgb(34,113,179);
+    width:auto;
+    height: auto;
+    
+}
+
+.subtitle {
+    grid-column: 1/3;
+    margin: 1px 1px;
+    text-align: center;
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif;
+    opacity: .7;
+    padding-top: 1em;
+    font-weight: bold;
+    text-decoration:none;
+    text-shadow: 0.5px 0.5px;
+    font-style: italic;
+    font-size: 18px;
+
+    
+    
+    
+    
+}
+
+.datos-obligatorios {
+    color :red;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+
+
+.Rol {
+    
+    grid-column: 1/2;
+
+
+}
+
+.user-registre {
+    grid-column: 1/3;
+    
+}
+
+.segurity {
+
+    grid-column: 1/3;
+}
+
+.direccion {
+
+grid-column: 1/3;
+}
+
+.boton {
+
+    display: block;
+    width: 200px;
+    height: 150px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 2/3;
+
+
+}
+
+
+
+
+
+.grid div {
+    padding:0;
+    margin:10px 10px;
+    border-radius:20px;
+    padding-top:auto;
+    position:relative;
+
+}
+
+
+

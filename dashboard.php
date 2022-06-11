@@ -19,7 +19,7 @@
     <title>Inventario MetalMecanica</title>
 </head>
 <body>
-<h6 class="header-1 jumbotron">aqui va la fecha</h6>
+<h6 class="header-1 jumbotron">aqui va la fechassss</h6>
 
 <div class="grid-container-1">
   <div class="wrapper">
@@ -67,7 +67,7 @@
 </svg>
      </div>
       <div class="contenido">
-           <span class="titulo">Transito</span>
+           <span class="titulo">Pedidos</span>
            <div class="cantidad" id="c-transito">0</div>
       </div>
   </div>
